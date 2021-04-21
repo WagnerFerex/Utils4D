@@ -13,7 +13,7 @@ uses
   Utils4D.Interfaces;
 
 type
-  TUtils4D = class(TInterfacedObject, IUtils4D)
+  TUtils4D = class(TInterfacedObject)
   private
   public
     constructor Create;
@@ -26,5 +26,43 @@ type
   end;
 
 implementation
+
+{ TUtils4D }
+
+constructor TUtils4D.Create;
+begin
+
+end;
+
+function TUtils4D.DataSet(DataSet: TDataSet): IUtils4DDataSet;
+begin
+
+end;
+
+destructor TUtils4D.Destroy;
+begin
+
+  inherited;
+end;
+
+function TUtils4D.Edit(Edit: TEdit): IUtils4DEdit;
+begin
+
+end;
+
+function TUtils4D.Form(Form: TForm): IUtils4DForm;
+begin
+
+end;
+
+class function TUtils4D.New: IUtils4D;
+begin
+
+end;
+
+function TUtils4D.WebBrowser(WebBrowser: TWebBrowser): IUtils4DWebBrowser;
+begin
+
+end;
 
 end.

@@ -4,7 +4,8 @@ uses
   Vcl.Forms,
   Unit2 in 'Unit2.pas' {Form2},
   Utils4D in '..\..\Source\Utils4D.pas',
-  Utils4D.Interfaces in '..\..\Source\Utils4D.Interfaces.pas';
+  Utils4D.Interfaces in '..\..\Source\Utils4D.Interfaces.pas',
+  RegisterKey in 'RegisterKey.pas';
 
 {$R *.res}
 

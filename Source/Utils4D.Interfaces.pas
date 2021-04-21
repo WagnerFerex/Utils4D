@@ -44,15 +44,15 @@ type
 
   IUtils4DWebBrowser = interface
     ['{AEAC624D-2925-493A-9CBA-D57C94B5B137}']
-    function RegisterIEv11;
+    procedure RegisterIEv11;
   end;
 
   IUtils4DForm = interface
     ['{C81CD59D-5FCB-42AF-AA18-5F3EFA9DB294}']
     function ClearComponents: IUtils4DForm;
     function SetStyleComponents(AClass: TComponentClass; ColorBackground: Integer; FontName: string; FontSize: Integer; FontColor: TColor): IUtils4DForm; overload;
-    function SetStyleComponents<T>(Component: T; ColorBackground: Integer; FontName: string; FontSize: Integer; FontColor: TColor): IUtils4DForm; overload;
-    function SetStyleComponents(ColorBackground: Integer; FontName: string; FontSize: Integer; FontColor: TColor); overload;
+    //function SetStyleComponents(Component: T; ColorBackground: Integer; FontName: string; FontSize: Integer; FontColor: TColor): IUtils4DForm; overload;
+    function SetStyleComponents(ColorBackground: Integer; FontName: string; FontSize: Integer; FontColor: TColor): IUtils4DForm; overload;
   end;
 
   IUtils4DSystem = interface

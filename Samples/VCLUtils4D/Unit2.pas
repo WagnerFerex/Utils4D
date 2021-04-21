@@ -8,8 +8,18 @@ uses
 
 type
   TForm2 = class(TForm)
-    BitBtn1: TBitBtn;
-    procedure BitBtn1Click(Sender: TObject);
+    btnCancelar: TBitBtn;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    btnSalvar: TBitBtn;
   private
     { Private declarations }
   public
@@ -22,14 +32,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TForm2.BitBtn1Click(Sender: TObject);
-begin
-  TUtils4D.New.DataSet(ClientDataSet).ExportToExcel('c:\temp\name.xls');
-  TUtils4D.New.Edit(Edit1).SetStyle(teCell).NumberOnly;
-
-
-  Application.CreateForm();
-end;
 
 end.
