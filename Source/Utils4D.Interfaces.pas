@@ -18,6 +18,18 @@ type
   IUtils4DForm = interface;
   IUtils4DSystem = interface;
 
+  eEndereco = record
+    CEP: string;
+    Logradouro: string;
+    Complemento: string;
+    Bairro: string;
+    Localidade: string;
+    UF: string;
+    IBGE: string;
+    GIA: string;
+    DDD: string;
+  end;
+
   IUtils4D = interface
     ['{C3DA6D31-8A16-4972-985F-01DA290E7217}']
     function DataSet(DataSet: TDataSet): IUtils4DDataSet;
@@ -34,6 +46,11 @@ type
     function LoadFromExcel(AFileName: string): IUtils4DDataSet;
     function LoadFromCSV(AFileName: string): IUtils4DDataSet;
     function LoadFromTxt(AFileName: string; Delimiter: string): IUtils4DDataSet;
+  end;
+
+  IUtils4DServices = interface
+    ['{0627EDCB-8776-476D-9113-BAC1B9E9AC11}']
+    function BuscaCEP(CEP: string): eEndereco;
   end;
 
   IUtils4DEdit = interface
