@@ -14,7 +14,7 @@ type
   end;
 
 var
-  RegisterKey: TRegisterKey;
+  _RegisterKey: TRegisterKey;
 
 implementation
 

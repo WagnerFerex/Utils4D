@@ -48,6 +48,13 @@ object Form2: TForm2
     Height = 13
     Caption = 'C'#243'digo'
   end
+  object SpeedButton1: TSpeedButton
+    Left = 151
+    Top = 287
+    Width = 23
+    Height = 22
+    OnClick = SpeedButton1Click
+  end
   object btnCancelar: TBitBtn
     Left = 520
     Top = 296
@@ -98,5 +105,21 @@ object Form2: TForm2
     Height = 25
     Caption = '&Salvar'
     TabOrder = 6
+  end
+  object edtCEP: TEdit
+    Left = 24
+    Top = 288
+    Width = 121
+    Height = 21
+    TabOrder = 7
+  end
+  object BitBtn1: TBitBtn
+    Left = 520
+    Top = 25
+    Width = 75
+    Height = 25
+    Caption = 'Email'
+    TabOrder = 8
+    OnClick = BitBtn1Click
   end
 end
